@@ -12,32 +12,28 @@ I also normalized the data so the training becomes stable and does not break.
 
 At first, the loss was increasing instead of decreasing, which made the model unstable.
 When I removed normalization, I got overflow errors and the values became very large. The model stopped working properly.
-It was also confusing to understand how the values of m and b are updated during training.
-I also faced a small issue while loading the dataset due to incorrect file placement.
+I also faced a small error while loading the dataset.
 
 ## Resolutions
 
-I fixed the loss and overflow issue by normalizing the data and choosing a proper learning rate.
-I understood the updates by observing how the values change step by step during training.
-I fixed the dataset issue by placing the CSV file in the same folder as the notebook.
+Normalizing the data and correcting the learning rate fixed the loss and overflow issue.
+the dataset issue was fixed by placing the CSV file in the same folder as the notebook.
 
 ## Results
 
-The loss decreases smoothly over epochs, which shows that the model is learning correctly.
-The final equation represents the relationship between area and price after training.
+After training the model, the loss started decreasing steadily, which shows that the model was learning properly.
+The final equation gives a clear relationship between area and price based on the data.
 
 ## Learnings
 
-I learned how linear regression works internally instead of using libraries.
-I understood how gradient descent updates the model step by step.
-I also learned that normalization is very important for stable training.
+1. I understood the concepts of linear regression.
+2. I learned how gradient descent updates the model step by step.
 
 ## How to run this project
 
 1. Download or clone this repository
 2. Make sure the CSV file and notebook are in the same folder
-3. Install required libraries:
-4. Open Jupyter Notebook:
+3. Install required libraries
+4. Open Jupyter Notebook
 5. Run all the cells in order
 
-You will get the loss vs epoch graph and the final learned equation.
